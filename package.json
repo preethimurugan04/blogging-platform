@@ -1,0 +1,25 @@
+{
+  "name": "blogging-platform-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "chai": "^5.2.0",
+    "chromedriver": "^134.0.5",
+    "ejs": "^3.1.10",
+    "ejs-locals": "^1.0.2",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "mocha": "^11.1.0",
+    "mongoose": "^8.13.1",
+    "selenium-webdriver": "^4.30.0"
+  }
+}

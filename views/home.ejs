@@ -1,0 +1,20 @@
+<% layout('layout') %>
+
+<h1>Blog Posts</h1>
+
+<% if (posts.length === 0) { %>
+  <p>No posts available.</p>
+<% } else { %>
+  <div class="post-container">
+    <% posts.forEach(post => { %>
+      <div class="post-card">
+        <h2 class="post-title"><%= post.title %></h2>
+        <p class="post-content"><%= post.content %></p>
+        <p class="post-meta">
+          By <%= post.author %> on 
+          <%= new Date(post.createdAt).toLocaleString('en-GB', { timeZone: 'Europe/London' }) %>
+        </p>
+      </div>
+    <% }) %>
+  </div>
+<% } %>

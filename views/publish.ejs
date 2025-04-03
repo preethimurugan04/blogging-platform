@@ -1,0 +1,8 @@
+<% layout('layout') -%>
+<h1>Publish a New Post</h1>
+<form action="/publish" method="POST">
+  <input type="text" name="title" placeholder="Title" required>
+  <textarea name="content" placeholder="Write your post..." required></textarea>
+  <input type="text" name="author" placeholder="Your Name" required>
+  <button type="submit">Publish</button>
+</form>
